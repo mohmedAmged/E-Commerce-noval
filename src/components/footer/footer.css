@@ -115,3 +115,25 @@ margin-bottom: 9px;
     color: #fff;
     background-color: #b59175 ;
 }
+.footerBottom{
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 4px 0;
+    border-top: 1px solid #434343;
+
+}
+.footerBottom p{
+    color: #999;
+    font-size: 14px;
+    margin: 10px 0;
+}
+.footerBottom p .footerLink{
+    color: #999;
+    text-decoration: none;
+    transition: color .2s ease-out;
+    cursor: pointer;
+    margin-left: 3px;
+}
+.footerBottom p .footerLink:hover{
+    color: #fff;
+}

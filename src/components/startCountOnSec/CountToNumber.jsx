@@ -10,7 +10,7 @@ export default function CountToNumber({ targetNumber }) {
             } else {
                 clearInterval(interval);
             }
-        }, 80);
+        }, 130);
 
         return () => {
             clearInterval(interval);

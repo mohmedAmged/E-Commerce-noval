@@ -1,6 +1,7 @@
 import React from 'react'
 import './footer.css'
 import Form from 'react-bootstrap/Form';
+import { Link } from 'react-router-dom';
 export default function MyFooter() {
     return (
         <>
@@ -11,7 +12,7 @@ export default function MyFooter() {
                             <div className="footerBox firstBox">
                                 <div className="title first">
                                     <a href='#tit'>
-                                    NÖVAL
+                                        NÖVAL
                                     </a>
                                 </div>
                                 <div className="info">
@@ -65,7 +66,7 @@ export default function MyFooter() {
                                 </div>
                                 <div className="info">
                                     <Form>
-                                        <Form.Group className="mb-3"   controlId="exampleForm.ControlInput1">
+                                        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                                             <Form.Control className='inputStyle' type="email" placeholder="E-mail" />
                                             <span className='labelStyle'>* Get all the latest offers & info</span>
                                         </Form.Group>
@@ -73,6 +74,20 @@ export default function MyFooter() {
                                     <button className='btn'>submitt</button>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="footerBottom">
+                <div className="container">
+                    <div className="row justify-content-center">
+                        <div className="col-lg-10">
+                            <p>
+                                © 2023
+                                    <Link className='footerLink' to={"https://github.com/mohmedAmged"} target="_blank">
+                                        Mohamed Amged
+                                    </Link> , All Rights Reserved
+                            </p>
                         </div>
                     </div>
                 </div>
