@@ -1,0 +1,52 @@
+.sideBarTitle {
+    font-family: 'Belleza', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 25px;
+    line-height: 1.12em;
+    margin: 0 0 18px;
+}
+
+.shopFilter {
+    /* margin-top: 60px; */
+    padding: 0 25px;
+    text-align: left;
+}
+
+.bestItem img {
+    height: 100px;
+}
+
+.bestItem h1,
+.bestItem p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.62em;
+    font-weight: 300;
+    color: #595959;
+    cursor: pointer;
+    transition: all ease-out .1s;
+}
+
+.bestItem h1:hover {
+    color: #b59175;
+}
+
+.adjustWidtImg {
+    width: 60% !important;
+}
+
+.adjustWidtText {
+    width: 40% !important;
+}
+
+@media screen and (max-width: 600px) {}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 1020px) {
+    .bestItem img {
+        width: 100px !important;
+    }
+}

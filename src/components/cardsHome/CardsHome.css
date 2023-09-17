@@ -1,0 +1,95 @@
+.cardSlider{
+    margin-top: 120px !important;
+}
+.cardSliderTitle .text h2{
+    text-align: left;
+}
+.cardSliderTitle .text p{
+    text-align: left !important;
+
+}
+
+.carouselSectoinSwiperContent {
+  width: 100%;
+}
+.cardItem{
+    position: relative;
+}
+.cardItem img{
+  height: 400px;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.cardItem:hover .overlay{
+    opacity: 1;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s ease;
+  }
+  .overlayText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .overlayText h2, .overlayText p{
+    font-family: 'Belleza',sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 1.12em;
+  }
+  .overlayText p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    line-height: 1.62em;
+    font-weight: 300;
+  }
+.cardItem:hover .overlayText {
+    opacity: 1;
+  }
+  .cardSlider .swiper-slide {
+    width: calc(100% / 4) !important;
+  }
+
+  /* start responsive */
+  /* small screen  0-600px*/
+  @media (max-width: 600px) {
+    .cardSlider .swiper-slide {
+        width: 50% !important;
+      }
+      .cardSlider .carouselSectionMainSwiper {
+        padding-inline-start: 0 !important;
+      }
+      .cardItem img{
+        height: 280px;
+      }
+  }
+ 
+  @media (max-width: 768px) {
+    .cardSlider .carouselSectionMainSwiper {
+        padding-inline-start: 30px !important;
+      }
+      .cardSlider .swiper-slide {
+        width: calc(100% / 2) !important;
+      }
+  }
+  
+  @media (max-width: 1020px){
+    .cardSlider .swiper-slide{
+      width: calc(100% / 3) !important;
+    }
+    .cardSlider .carouselSectionMainSwiper {
+      padding-inline-start: 30px !important;
+    }
+  }

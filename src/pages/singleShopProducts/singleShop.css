@@ -1,0 +1,192 @@
+.productDetails {
+    padding: 110px 0 143px;
+}
+
+.product__details__text {
+    padding: 0 20px;
+    text-align: left;
+}
+
+.productTitle h1 {
+    font-family: 'Belleza', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 66px;
+    line-height: 1em;
+}
+
+.productPrice p {
+    font-size: 19px;
+    color: #000;
+    margin: 16px 0 0;
+}
+
+.productInfo {
+    margin-top: 43px;
+}
+
+.productInfo p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.62em;
+    font-weight: 300;
+    color: #595959;
+}
+
+.AddCartSec .cartActions {
+    margin-right: 33px;
+}
+
+.AddCartSec .cartActions input {
+    position: relative;
+    height: 47px;
+    width: 47px;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    text-align: center;
+    line-height: 47px;
+    outline: 0;
+    border: 1px solid #d8d8d8;
+    color: #2e251d;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.AddCartSec .cartActions button {
+    color: #2e251d;
+    font-size: 19px;
+    cursor: pointer;
+    padding: 0 16px;
+    background: transparent;
+}
+
+.AddCartSec .cartSubmit button {
+    padding: 8px 47px !important;
+    letter-spacing: 0;
+    color: #b59175;
+    background-color: transparent;
+    border: 1px solid #b59175;
+    width: auto;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    line-height: 30px;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 0;
+    outline: 0;
+    transition: color .2s ease-out, background-color .2s ease-out, border-color .2s ease-out;
+}
+
+.AddCartSec .cartSubmit button:hover {
+    color: #fff;
+    background-color: #b59175;
+    border-color: #b59175;
+}
+
+.extraInfo {
+    margin-top: 48px;
+}
+
+.extraInfo span {
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    letter-spacing: .3em;
+    font-weight: 400;
+}
+
+.extraInfo span.resStyle {
+    text-transform: capitalize;
+    color: #595959;
+}
+
+.single__product__img {
+    height: 600px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    --moz-appearance: textfield;
+}
+.toggleSec{
+    margin-top: 91px;
+}
+.toggle{
+    text-align: left;
+}
+.toggle button{
+    background-color: transparent !important;
+    border: 0;
+    border-radius: 0;
+    color: #000;
+    text-transform: uppercase;
+    color: #000;
+    font-family: 'Roboto',sans-serif;
+    font-size: 13px;
+    line-height: 1.4em;
+    letter-spacing: .3em;
+    font-weight: 400;
+    transition: all .2s ease-out;
+    border-bottom: 1px solid #9e9e9e;
+    /* padding: 15px 26px; */
+    padding: 15px 55px 15px 6px;
+}
+.toggle button:hover{
+    color: #000;
+    text-decoration: line-through;
+    border-bottom: 1px solid #9e9e9e;
+}
+.toggle .card{
+    border: 0;
+    margin-top: 25px !important;
+}
+.toggle .card .card-body{
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    line-height: 1.62em;
+    font-weight: 300;
+    color: #595959;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+.toggle .card .card-body p{
+    text-transform: uppercase;
+    color: #000;
+    font-family: 'Roboto',sans-serif;
+    font-size: 13px;
+    line-height: 1.4em;
+    letter-spacing: .3em;
+    font-weight: 400;
+    padding: 5px 0;
+}
+.toggle .card .card-body p span{
+    padding: 5px 10px;
+    text-align: left;
+    color: #595959;
+    text-transform: capitalize;
+}
+.relatedProducts{
+    margin-top: 95px;
+}
+.relatedProducts h2{
+    text-align: left;
+    font-family: 'Belleza',sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 46px;
+    line-height: 1em;
+    margin: 0 0 33px;
+}

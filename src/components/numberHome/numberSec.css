@@ -1,0 +1,23 @@
+.padbottom{
+    padding-bottom: 120px;
+}
+.numberItem .numberBox{
+    text-align: left;
+}
+.numberItem .numberBox .numTit span{
+    font-family: 'Belleza',sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 1;
+    color: #000;
+    padding-left: 27px;
+}
+.numberItem .numberBox .numText h3{
+    margin: -21px 0 0 0;
+    font-family: 'Qwitcher Grypen',cursive;
+    text-transform: none;
+    letter-spacing: 15px;
+    color: #d7cbb7;
+    font-size: 46px;
+    line-height: 1em;
+}

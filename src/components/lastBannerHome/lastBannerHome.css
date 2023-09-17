@@ -1,0 +1,75 @@
+.lastBanner{
+   position: relative;
+   padding-left: 100px;
+}
+.lastBanner .imgCover{
+    width: 100%;
+}
+.lastBanner .imgCover img{
+    object-fit: cover;
+    filter: brightness(.7);
+}
+.lastBanner .overlayTextt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    width: 100%;
+    text-align: right;
+    padding-right: 70px;
+}
+.lastBanner .overlayTextt h3{
+    font-family: 'Belleza',sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFFFFF;
+}
+.lastBanner .overlayTextt p{
+    margin-bottom: -9px;
+    font-size: 50px;
+    color: #FFFFFF;
+    font-family: 'Qwitcher Grypen', cursive;
+    line-height: 1em;
+    margin-top: 22px;
+    transition: clip-path .8s cubic-bezier(.65,0,.35,1) .2s,-webkit-clip-path .8s cubic-bezier(.65,0,.35,1) .2s;
+    margin-left: -.5em;
+    padding-left: .5em;
+}
+.lastBanner .overlayTextt button{
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+    font-family: 'Roboto',sans-serif;
+    font-size: 13px;
+    line-height: 30px;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 0;
+    outline: 0;
+    transition: color .2s ease-out,background-color .2s ease-out,border-color .2s ease-out;
+    padding: 10px 57px;
+    margin-top: 40px;
+}
+.lastBanner .overlayTextt button:hover{
+    color: #b59175;
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 600px){
+    .lastBanner{
+        padding: 0;
+    }
+    .lastBanner .imgCover img{
+        height: 500px;
+    }
+    .lastBanner .overlayTextt{
+        padding-right: 20px;
+    }
+    .lastBanner .overlayTextt .textw{
+        padding: 10px;
+    }
+}

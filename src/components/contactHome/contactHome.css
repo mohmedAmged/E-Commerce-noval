@@ -1,0 +1,89 @@
+.map {
+    height: 90vh;
+    filter:  grayscale(100%);
+    /* filter: brightness(80%); */
+}
+.contactHomeSec {
+    padding: 120px 0;
+}
+.text{
+    text-align: left !important;
+}
+.formContact{
+    text-align: left;
+}
+.contactHomeSec .contactLeft{
+    padding-left: 20px;
+}
+.contactHomeSec .contactLeft .formStyle{
+    border: none !important;
+    border-bottom: 1px solid #8d8d8d !important;
+    margin: 0 0 26px;
+    padding: 4px 0;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 28px;
+    width: 100%;
+    border-radius: 0;
+    color: #595959;
+    background-color: transparent;
+    outline: 0;
+    cursor: pointer;
+    transition: color .2s ease-out,background-color .2s ease-out,border-color .2s ease-out;
+}
+.contactHomeSec .contactLeft .formStyle:focus{
+    outline: none !important;
+    border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.contactHomeSec .contactLeft .btnStyle{
+    color: #b59175;
+    background-color: transparent;
+    border: 1px solid #b59175;
+    padding: 8px 47px;
+    font-family: 'Roboto',sans-serif;
+    font-size: 13px;
+    line-height: 30px;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 0;
+    outline: 0;
+    transition: color .2s ease-out,background-color .2s ease-out,border-color .2s ease-out;
+}
+.contactHomeSec .contactLeft .btnStyle:hover{
+    color: #fff;
+    background-color: #b59175;
+    border: 1px solid #b59175;
+}
+.mapSec{
+    justify-content: end;
+}
+@media screen and (max-width: 600px){
+    .contactLeft .text h2{
+        text-align: left !important;
+    }
+    .contactLeft .text p{
+        text-align: left !important;
+    }
+    .mapSec{
+        padding: 100px 0 0;
+        justify-content: center !important;
+    }
+    .map{
+        height: 70vh;
+    }
+}
+@media screen and (max-width: 768px){
+    .mapSec{
+        padding: 100px 0 0;
+        justify-content: center !important;
+    }
+}
+@media screen and (max-width: 1020px){
+    .mapSec{
+        padding: 100px 0 0;
+        justify-content: center !important;
+    }
+}

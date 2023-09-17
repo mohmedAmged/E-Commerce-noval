@@ -1,0 +1,46 @@
+.card__img {
+    height: 400px !important;
+    overflow: hidden;
+    transition: transform ease .5s;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.imgItem {
+    overflow: hidden;
+
+}
+
+.imgItem:hover .card__img {
+    transform: scale(1.1);
+    /* transform: translateX(1.1); */
+}
+
+.textItem {
+    margin-bottom: 40px;
+    margin-top: 34px;
+}
+
+.textItem h4 {
+    margin-bottom: 7px;
+    font-family: 'Belleza', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 25px;
+    line-height: 1.12em;
+}
+
+.textItem p {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.62em;
+    font-weight: 300;
+    color: #b59175;
+    transition: color .2s ease-out;
+    cursor: pointer;
+}
+
+.textItem p:hover {
+    color: #b59175;
+}

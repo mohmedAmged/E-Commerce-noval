@@ -1,0 +1,112 @@
+.searchStyle {
+    border: 0 !important;
+    border-bottom: 1px solid #595959 !important;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: inherit;
+    color: #595959 !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+}
+
+.searchFilter {
+    margin: 60px 0;
+}
+
+.searchStyle:focus {
+    outline: none !important;
+    border-color: inherit !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+select{
+    width: 100%;
+}
+select option{
+    font-family: 'Belleza',sans-serif;
+    font-size: 18px;
+    background: #fff0e765 !important;
+    overflow: hidden;
+}
+select option{
+    overflow: hidden;
+}
+.searchFilter .formActions{
+    margin-top: 35px;
+}
+.searchFilter button{
+    font-family: 'Roboto',sans-serif;
+    font-size: 13px;
+    line-height: 30px;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 0;
+    outline: 0;
+    transition: color .2s ease-out,background-color .2s ease-out,border-color .2s ease-out;
+    padding: 0!important;
+    color: #000;
+    background-color: transparent;
+    border: 0;
+    letter-spacing: .3em;
+    position: relative;
+}
+.searchFilter button::after{
+    content: '';
+    position: absolute;
+    width: 66%;
+    height: 1px;
+    background-color: #000;
+    right: -10%;
+    top: calc(50% - 1px);
+    transition: all .3s ease-in-out;
+}
+.searchFilter button:hover::after{
+    width: 0;
+}
+.resetBtn{
+    margin-left: 20px;
+}
+.categoryFilter{
+    text-align: left;
+}
+.categoryFilter p{
+    color: #595959;
+    margin: 0 0 8px;
+    transition: color .2s ease-out;
+    cursor: pointer;
+    font-family: 'Roboto',sans-serif;
+    font-size: 18px;
+    line-height: 1.62em;
+    width: 100%;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+.sideBarTitle{
+    font-size: 22px !important;
+}
+.categoryFilter p:hover{
+    color: #b59175;
+}
+/* start responsive */
+/* 0 - 600px */
+@media screen and (max-width: 600px){
+    .searchStyle {
+        width: 100% !important;
+    }
+}
+/* 600 - 768px */
+
+@media screen and (max-width: 768px){
+    .searchStyle {
+        width: 100% !important;
+    }
+}
+/* 768 - 1020px */
+
+@media screen and (max-width: 1020px){
+    .searchStyle {
+        width: 100% !important;
+    }
+}

@@ -1,0 +1,47 @@
+.titleBox {
+    background-color: #ebebeb;
+}
+
+.textTitle {
+    padding: 60px 0;
+    text-align: left;
+}
+
+.textTitle h1 {
+    color: #000000;
+    font-family: 'Belleza', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 66px;
+    line-height: 1em;
+}
+
+.textTitle span {
+    margin-top: 11px;
+    font-size: 16px;
+    color: #595959;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.textTitle .nav-link {
+    display: inline-block;
+    margin-right: 2px;
+}
+
+/* start responsive */
+/* 0 - 600px */
+@media screen and (max-width: 600px) {
+    .textTitle h1 {
+        font-size: 44px;
+    }
+}
+
+/* 600 - 768px */
+
+@media screen and (max-width: 768px) {}
+
+/* 768 - 1020px */
+
+@media screen and (max-width: 1020px) {}
