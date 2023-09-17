@@ -1,0 +1,128 @@
+.checkoutInfo{
+    text-align: left;
+    padding-top: 120px;
+}
+.checkoutInfo h3{
+    font-family: 'Belleza',sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 46px;
+    line-height: 1em;
+}
+.checkoutInfo input{
+    width: 100%;
+    vertical-align: top;
+    margin: 0 0 26px;
+    padding: 4px 0;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 28px;
+    color: #595959;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #8d8d8d;
+    border-radius: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: color .2s ease-out,background-color .2s ease-out,border-color .2s ease-out;
+}
+.checkoutInfo input:focus{
+    color: #000;
+    background-color: transparent;
+    border-color: #000;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.checkoutInfo label{
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    text-transform: capitalize;
+    line-height: 1.62em;
+    font-weight: 300;
+    color: #595959;
+}
+.checkoutInfo table{
+    
+    width: 100%;
+    vertical-align: middle;
+    border: medium none;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: inherit;
+    color: inherit;
+    line-height: inherit;
+
+}
+.checkoutInfo table tr{
+    border: 1px solid #8d8d8d;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+.checkoutInfo table th{
+    padding: 30px 0 30px 5px;
+    vertical-align: middle;
+    text-align: left;
+    border: 0;
+    font-family: 'Belleza',sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 18px;
+    line-height: 1.1em;
+}
+.checkoutInfo table th:first-child{
+    padding-left: 0;
+}
+.checkoutInfo table td{
+    padding: 30px 0 30px 5px;
+    vertical-align: middle;
+    text-align: left;
+    border: 0;
+}
+.checkoutInfo table td:first-child{
+    padding-left: 0;
+}
+.checkoutInfo p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    line-height: 1.62em;
+    font-weight: 300;
+    color: #595959;
+    margin-top: 20px;
+}
+.checkoutInfo button{
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+    width: auto;
+    margin: 0;
+    font-family: Roboto,sans-serif;
+    font-size: 13px;
+    line-height: 30px;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 0;
+    outline: 0;
+    transition: color .2s ease-out,background-color .2s ease-out,border-color .2s ease-out;
+    padding: 8px 47px;
+    color: #b59175;
+    background-color: transparent;
+    border: 1px solid #b59175;
+    text-align: center;
+    padding: 8px 47px!important;
+    letter-spacing: 0!important;
+}
+.checkoutInfo button:hover{
+    color: #fff;
+    background-color: #b59175;
+    border-color: #b59175;
+}
+.pr__name_style{
+    color: rgba(117, 115, 115, 0.8);
+}

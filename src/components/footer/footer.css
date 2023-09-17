@@ -42,6 +42,9 @@ margin-bottom: 9px;
 .footerSec .footerBox .link span {
     margin-right: 21px;
 }
+.footerSec .footerBox .link span:last-child{
+    margin-right: 0 !important;
+}
 .footerSec .footerBox .link span a{
     color: #ffffff;
     text-transform: uppercase;

@@ -1,6 +1,4 @@
 import React, { useEffect } from 'react'
-import "@splidejs/react-splide/css";
-
 import "./CardsHome.css"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Controller } from 'swiper/modules'
@@ -10,7 +8,6 @@ import { getData } from '../../store/slices/singlePageData'
 export default function CardsHome() {
     const dispatche = useDispatch()
     const { products } = useSelector(state => state.productReducer)
-    console.log(products);
     useEffect(() => {
         dispatche(getData())
     }, [dispatche])

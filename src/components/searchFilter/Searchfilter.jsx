@@ -13,7 +13,6 @@ export default function Searchfilter(props) {
             .then(res => res.json())
             .then(data => setCategories(data))
     }, [])
-    console.log(categories);
     function getFilteredData(filterQuery) {
         fetch(`https://shop-product-tj9k.onrender.com/shopProducts?${filterQuery.trim()}`)
             .then(res => res.json())

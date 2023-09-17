@@ -3,7 +3,7 @@ import './footer.css'
 import Form from 'react-bootstrap/Form';
 export default function MyFooter() {
     return (
-        <div>
+        <>
             <div className=" footerSec">
                 <div className="container">
                     <div className="row">
@@ -77,6 +77,6 @@ export default function MyFooter() {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }

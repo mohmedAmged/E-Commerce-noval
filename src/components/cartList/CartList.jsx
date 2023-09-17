@@ -42,7 +42,6 @@ export default function CartList(props) {
                 <span className='p-3 border mx-3'>{props.product.quantity}</span>
                 <span onClick={handleIncreaseItem}>+</span>
             </td>
-            <td className='prod___subTot'>200</td>
         </tr>
     )
 }

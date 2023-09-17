@@ -75,13 +75,13 @@
         height: 70vh;
     }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) and (min-width: 600px){
     .mapSec{
         padding: 100px 0 0;
         justify-content: center !important;
     }
 }
-@media screen and (max-width: 1020px){
+@media screen and (max-width: 1020px) and (min-width: 768px){
     .mapSec{
         padding: 100px 0 0;
         justify-content: center !important;

@@ -14,13 +14,11 @@ import { addItem } from "../../store/slices/cartSlice";
 import Swal from 'sweetalert2'
 export default function SingleShop() {
     const { prodId } = useParams();
-    const [quantity, setQuatity] = useState(1);
     const dispatche = useDispatch();
     const { products } = useSelector((state) => state.productReducer);
     const [product, setProduct] = useState([]);
     const [relate, setRelate] = useState([]);
     const addi = product?.additional
-    console.log(addi);
     useEffect(() => {
         if (product?.length === 0) {
             dispatche(getData());
@@ -113,7 +111,7 @@ export default function SingleShop() {
                                                     <CCard className="mt-3">
                                                         <CCardBody>
                                                             {
-                                                                product.desc
+                                                                product?.desc
                                                             }
                                                         </CCardBody>
                                                     </CCard>

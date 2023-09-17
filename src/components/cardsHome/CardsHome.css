@@ -64,9 +64,9 @@
 
   /* start responsive */
   /* small screen  0-600px*/
-  @media (max-width: 600px) {
+  @media screen and (max-width: 600px) and (min-width: 0px) {
     .cardSlider .swiper-slide {
-        width: 50% !important;
+      width: calc(100% / 1.7) !important;
       }
       .cardSlider .carouselSectionMainSwiper {
         padding-inline-start: 0 !important;
@@ -76,7 +76,7 @@
       }
   }
  
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) and (min-width: 600px) {
     .cardSlider .carouselSectionMainSwiper {
         padding-inline-start: 30px !important;
       }
@@ -85,7 +85,7 @@
       }
   }
   
-  @media (max-width: 1020px){
+  @media screen and (max-width: 768px) and (min-width: 768px){
     .cardSlider .swiper-slide{
       width: calc(100% / 3) !important;
     }

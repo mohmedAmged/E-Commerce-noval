@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import './myCart.css'
 import PageTitle from '../PageTitle'
 import { Table } from 'react-bootstrap'
 import CartList from '../cartList/CartList'
 import { useDispatch, useSelector } from 'react-redux'
 import { calcTotal } from '../../store/slices/cartSlice'
+import { Link } from 'react-router-dom'
 export default function MyCart() {
     let cartItems = useSelector(state => state.cartReducer.cart)
-    // const [cartItems, setCartItems] = useState(JSON.parse(localStorage.getItem('cartItemsData')))
     const totalItems = useSelector(state => state.cartReducer.totalItems)
     const totalPrice = useSelector(state => state.cartReducer.totalPrice)
     const totalPriceAndShip = useSelector(state => state.cartReducer.totalPriceAndShip)
@@ -32,13 +32,12 @@ export default function MyCart() {
                                             <th className='prod___tit'>Product</th>
                                             <th className='prod___price'>Price</th>
                                             <th className='prod___qty'>Quantity</th>
-                                            <th className='prod___subTot'>suBTotal</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        { cartItems.map((el) => {
-                                                return <CartList key={el.id} product={el} />
-                                            })
+                                        {cartItems.map((el) => {
+                                            return <CartList key={el.id} product={el} />
+                                        })
                                         }
                                     </tbody>
                                 </Table>
@@ -70,12 +69,6 @@ export default function MyCart() {
                                                     <p>
                                                         shipping per item: <span>$ 50</span>
                                                     </p>
-                                                    <p>
-                                                        shipping to <span>NY</span>
-                                                    </p>
-                                                    <button>
-                                                        change Address
-                                                    </button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -90,9 +83,11 @@ export default function MyCart() {
                                             </tr>
                                         </tbody>
                                     </Table>
-                                    <button className='mt-4'>
-                                        proceed to check out
-                                    </button>
+                                    <Link to={"/checkout"}>
+                                        <button className='mt-4'>
+                                            proceed to check out
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

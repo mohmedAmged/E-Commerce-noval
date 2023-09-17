@@ -17,6 +17,7 @@ import Modern from './pages/modernPage/Modern';
 import WishList from './pages/wishList/WishList';
 import MyContact from './pages/contact/MyContact';
 import ScrollToTopButton from './components/scrollToTopButton/ScrollToTopButton';
+import CheckOut from './pages/checkout/CheckOut';
 
 function App() {
   const dispatche = useDispatch()
@@ -42,6 +43,7 @@ function App() {
         <Route path='/cart' element={<Cart/>}/>
         <Route path='/wishList' element={<WishList/>}/>
         <Route path='/contact' element={<MyContact/>}/>
+        <Route path='/checkout' element={<CheckOut/>}/>
       </Routes>
       <MyFooter/>
     </>

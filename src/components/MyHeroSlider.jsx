@@ -31,11 +31,9 @@ export default function MyHeroSlider() {
             <Swiper
                 spaceBetween={0}
                 effect={'fade'}
-                // navigation={true}
-                // slidesPerView={1}
                 loop={true}
                 autoplay={{
-                    delay: 3000000,
+                    delay: 3000,
                     disableOnInteraction: false,
                 }}
                 modules={[EffectFade, Navigation, Autoplay]}
