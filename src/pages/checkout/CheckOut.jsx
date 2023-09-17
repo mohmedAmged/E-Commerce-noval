@@ -87,7 +87,7 @@ export default function CheckOut() {
                                                         </strong>
                                                     </td>
                                                     <td>
-                                                        {item.price}
+                                                        $ {item.price}
                                                     </td>
                                                 </tr>
                                             })
@@ -96,12 +96,12 @@ export default function CheckOut() {
                                         <tfoot>
                                             <tr>
                                                 <th>subTotal</th>
-                                                <td>{totalPrice}</td>
+                                                <td>$ {totalPrice}</td>
                                             </tr>
                                             <tr>
                                                 <th>total</th>
                                                 <td>
-                                                    <strong>{totalPriceAndShip}</strong>
+                                                    <strong>$ {totalPriceAndShip}</strong>
                                                 </td>
                                             </tr>
                                         </tfoot>

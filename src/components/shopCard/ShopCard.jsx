@@ -60,12 +60,10 @@ export default function ShopCard(props) {
                                 {props.product.title}
                             </Link>
                         </h5>
-                        <span className="text__price">{props.product?.price} $</span>
+                        <span className="text__price">{props.product?.price}$ </span>
                     </div>
                     <div className="textCateg">
-
                         <span >{props.product?.category}</span>
-
                     </div>
                 </div>
             </div>
