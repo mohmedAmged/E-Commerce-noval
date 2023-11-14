@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { Action } from "@remix-run/router";
 
 const items = localStorage.getItem('cart') !== null ? JSON.parse(localStorage.getItem('cart')) : []
 const totalPrice = localStorage.getItem('totalPrice') !== null ? JSON.parse(localStorage.getItem('totalPrice')) : 0
@@ -35,12 +34,14 @@ const cartSlice = createSlice({
         increaseQuantity: (state, action) => {
             const obj = state.cart.find((item) => item.id === action.payload);
             obj.quantity++;
+            localStorage.setItem('cart', JSON.stringify(state.cart.map(item=>item)))
             localStorage.setItem('totalPrice', JSON.stringify(state.totalPrice))
             localStorage.setItem('totalItems', JSON.stringify(state.totalItems))
         },
         decreaseQuantity: (state, action) => {
             const obj = state.cart.find((item) => item.id === action.payload);
             if (obj.quantity > 1) obj.quantity--;
+            localStorage.setItem('cart', JSON.stringify(state.cart.map(item=>item)))
             localStorage.setItem('totalPrice', JSON.stringify(state.totalPrice))
             localStorage.setItem('totalItems', JSON.stringify(state.totalItems))
         },

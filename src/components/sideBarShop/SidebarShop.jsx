@@ -8,7 +8,7 @@ export default function SidebarShop(props) {
             <div className="shopFilter">
                 <Searchfilter setCurrPage={props.setCurrPage}
                     setProducts={props.setProducts} />
-                <div className="bestSeller">
+                {/* <div className="bestSeller">
                     <h4 className='sideBarTitle'>best Seller</h4>
                     <div className="row">
 
@@ -37,7 +37,7 @@ export default function SidebarShop(props) {
                         }
 
                     </div>
-                </div>
+                </div> */}
             </div>
         </>
     )

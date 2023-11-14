@@ -5,12 +5,14 @@ import SidebarShop from '../sideBarShop/SidebarShop'
 import ProductShopList from '../productShopList/ProductShopList'
 
 export default function MyShop() {
+  const [loading, setLoading] =useState(false)
     const [currPage, setCurrPage] = useState(1)
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch(`https://shop-product-tj9k.onrender.com/shopProducts`)
+        fetch(`http://localhost:3007/shopProducts`)
             .then(res => res.json())
             .then(data => setProducts(data))
+            setLoading(true)
     }, [])
     return (
         <div>
@@ -20,7 +22,7 @@ export default function MyShop() {
                     <div className="row">
                         <div className="col-lg-9">
                             <div className="shopItems">
-                                <ProductShopList currPage={currPage} setCurrPage={setCurrPage} products={products} />
+                                <ProductShopList setLoading={setLoading} loading={loading} currPage={currPage} setCurrPage={setCurrPage} products={products} />
                             </div>
                         </div>
                         <div className="col-lg-3">

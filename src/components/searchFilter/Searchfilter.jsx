@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./searchfilter.css";
 export default function Searchfilter(props) {
+    
     const [filter, setfilter] = useState({
         search: "",
         category: '',
@@ -9,12 +10,12 @@ export default function Searchfilter(props) {
     });
     const [categories, setCategories] = useState([])
     useEffect(() => {
-        fetch('https://shop-product-tj9k.onrender.com/categories')
+        fetch('http://localhost:3007/categories')
             .then(res => res.json())
             .then(data => setCategories(data))
     }, [])
     function getFilteredData(filterQuery) {
-        fetch(`https://shop-product-tj9k.onrender.com/shopProducts?${filterQuery.trim()}`)
+        fetch(`http://localhost:3007/shopProducts?${filterQuery.trim()}`)
             .then(res => res.json())
             .then(data => props.setProducts(data))
     }
