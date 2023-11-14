@@ -1,8 +1,8 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const URL = `http://localhost:3007/shopProducts`
-// const URL = `https://shop-product-tj9k.onrender.com/shopProducts`
+// const URL = `http://localhost:3007/shopProducts`
+const URL = `https://shop-product-tj9k.onrender.com/shopProducts`
 const initialState ={
     products: [],
     isLoading:false,

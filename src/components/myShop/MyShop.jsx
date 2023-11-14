@@ -9,7 +9,7 @@ export default function MyShop() {
     const [currPage, setCurrPage] = useState(1)
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:3007/shopProducts`)
+        fetch(`https://shop-product-tj9k.onrender.com/shopProducts`)
             .then(res => res.json())
             .then(data => setProducts(data))
             setLoading(true)

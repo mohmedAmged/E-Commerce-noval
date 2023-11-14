@@ -10,12 +10,12 @@ export default function Searchfilter(props) {
     });
     const [categories, setCategories] = useState([])
     useEffect(() => {
-        fetch('http://localhost:3007/categories')
+        fetch('https://shop-product-tj9k.onrender.com/categories')
             .then(res => res.json())
             .then(data => setCategories(data))
     }, [])
     function getFilteredData(filterQuery) {
-        fetch(`http://localhost:3007/shopProducts?${filterQuery.trim()}`)
+        fetch(`https://shop-product-tj9k.onrender.com/shopProducts?${filterQuery.trim()}`)
             .then(res => res.json())
             .then(data => props.setProducts(data))
     }
